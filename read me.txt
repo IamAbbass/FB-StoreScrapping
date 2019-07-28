@@ -1,0 +1,13 @@
+email: syedabbass141@gmail.com
+pass: asd654435654asfasd654
+
+1. Goto this store: https://web.facebook.com/pg/zaychinonline/shop/ ; https://web.facebook.com/zaychinonline/shop/?cid=234728994009466
+2. Extract links
+  ##### Code for URL Extraction
+  urls = $$('a'); for (url in urls) console.log ( urls[url].href );
+
+  ##### Code for URL Extraction with Anchor Text (COLOURED)(works for chrome/firefox)
+  var urls=$$('a');for(url in urls){console.log("%c#"+url+" - %c"+urls[url].innerHTML +" -- %c"+urls[url].href,"color:red;","color:green;","color:blue;");}
+
+  ##### Code for URL Extraction with Anchor Text (IE/Edge)
+  var urls=$$('a');for(url in urls){console.log("#"+url+" - "+urls[url].innerHTML +" -- "+urls[url].href)}
